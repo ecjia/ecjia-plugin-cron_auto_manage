@@ -2,7 +2,7 @@
 /*
 Plugin Name: 自动处理
 Plugin URI: http://www.ecjia.com/plugins/ecjia.cron_auto_manage/
-Description: 自动处理商品的上架下架,和文章的发布取消。
+Description: 自动处理商品的上架下架,和文章的发布取消
 Author: ECJIA TEAM
 Version: 1.0.0
 Author URI: http://www.ecjia.com/
