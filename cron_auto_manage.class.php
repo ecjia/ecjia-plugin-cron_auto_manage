@@ -25,7 +25,7 @@ class cron_auto_manage extends cron_abstract
     public function run() {
     	
         $time = gmtime();
-        $limit = !empty($cron['auto_manage_count']) ? $cron['auto_manage_count'] : 5;
+        $limit = !empty($this->configure['auto_manage_count']) ? $this->configure['auto_manage_count'] : 5;
         $sql = "SELECT * FROM " . $GLOBALS['ecs']->table('auto_manage') . " WHERE starttime > '0' AND starttime <= '$time' OR endtime > '0' AND endtime <= '$time' LIMIT $limit";
         $autodb = $db->getAll($sql);
         foreach ($autodb as $key => $val)
