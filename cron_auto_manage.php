@@ -73,12 +73,12 @@ class plugin_cron_auto_manage {
 }
 
 Ecjia_PluginManager::extend('cron_auto_manage', function() {
+    RC_Locale::loadPluginTextdomain('cron_auto_manage');
     require_once RC_Plugin::plugin_dir_path(__FILE__) . 'cron_auto_manage.class.php';
-        return new cron_auto_manage();
+    return new cron_auto_manage();
 });
 
 RC_Plugin::register_activation_hook(__FILE__, array('plugin_cron_auto_manage', 'install'));
 RC_Plugin::register_deactivation_hook(__FILE__, array('plugin_cron_auto_manage', 'uninstall'));
-RC_Locale::loadPluginTextdomain('cron_auto_manage');
 
 // end
