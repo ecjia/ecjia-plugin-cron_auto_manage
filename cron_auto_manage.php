@@ -79,5 +79,6 @@ Ecjia_PluginManager::extend('cron_auto_manage', function() {
 
 RC_Plugin::register_activation_hook(__FILE__, array('plugin_cron_auto_manage', 'install'));
 RC_Plugin::register_deactivation_hook(__FILE__, array('plugin_cron_auto_manage', 'uninstall'));
+RC_Locale::loadPluginTextdomain('cron_auto_manage');
 
 // end
