@@ -54,6 +54,7 @@ Author: ECJIA TEAM
 Version: 1.30.0
 Author URI: http://www.ecjia.com/
 Plugin App: cron
+Text Domain: cron_auto_manage
 */
 class plugin_cron_auto_manage {
 
